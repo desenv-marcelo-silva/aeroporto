@@ -1,9 +1,12 @@
-# Babel Webpack Starter
+# Projet to practice JS - From babel-webpack starter
 
-A starter pack to build JavaScript applications using standards from ES2015, ES2016 & ES2017. It uses webpack, Babel and webpack-dev-server to compile and serve. It is fully compatible with Async/Await as it uses the Babel polyfill.
+This project is part of my training to be the best js programmer.
+
+Bases on Udemy course of Harrison Perete
 
 ### Version
-1.1.0
+
+0.1
 
 ## Usage
 
@@ -16,13 +19,15 @@ $ npm install
 ```
 
 ### Serve
-To serve in the browser  - Runs webpack-dev-server
+
+To serve in the browser - Runs webpack-dev-server
 
 ```sh
 $ npm start
 ```
 
 ### Build
+
 Compile and build
 
 ```sh
