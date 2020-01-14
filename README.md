@@ -1,6 +1,6 @@
 # Projet to practice JS - From babel-webpack starter
 
-This project is part of my training to be the best js programmer.
+This project is part of my training to be an best js programmer.
 
 Bases on Udemy course of Harrison Perete
 
