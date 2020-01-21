@@ -1,10 +1,25 @@
-const greeting = 'Hello World';
-console.log(greeting);
+import { multi } from "./air-port-codes-node";
+import { UI, ui } from "./ui";
 
-const getData = async (url) => {
-  const response = await fetch(url);
-  const result = await response.json();
-  console.log(result);
-};
+const nomeAeroporto = document.getElementById("termo");
 
-getData('https://jsonplaceholder.typicode.com/posts');
+nomeAeroporto.addEventListener("keyup", e => {
+  const termo = e.target.value;
+
+  if (termo == "") {
+  } else {
+    ui.iniciarProgresso();
+    const api = multi({
+      key: "1cc506036b",
+      secret: "45f119807683d7f",
+      limit: 20
+    });
+    api.request(termo);
+    api.onSuccess = data => {
+      ui.listarResultados(data);
+    };
+    api.onError = data => {
+      ui.notificar(data.message);
+    };
+  }
+});
