@@ -6,8 +6,7 @@ const nomeAeroporto = document.getElementById("termo");
 nomeAeroporto.addEventListener("keyup", e => {
   const termo = e.target.value;
 
-  if (termo == "") {
-  } else {
+  if (termo !== "") {
     ui.iniciarProgresso();
     const api = multi({
       key: "1cc506036b",
